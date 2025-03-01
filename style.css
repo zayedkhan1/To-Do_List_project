@@ -1,0 +1,22 @@
+/* Custom Styles */
+#heatmap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #taskList {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  /* 
+   */
+   /* Custom Checkbox Style */
+.form-checkbox {
+  border-color: #3b82f6; /* Tailwind's blue-500 */
+}
+
+/* Line-through Style */
+.line-through {
+  text-decoration: line-through;
+  color: #9ca3af; /* Tailwind's gray-400 */
+}

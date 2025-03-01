@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Centered Container -->
+  <div class="min-h-screen flex flex-col items-center justify-center p-4">
+    <h1  class="text-3xl text-blue-600 text-center p-8 font-bold" >ZaYED's Daily Activity Tracker</h1>
+
+    <!-- Navigation Bar -->
+    <nav class="mb-8">
+      <ul class="flex space-x-4">
+        <li><button id="todoTab" class="text-blue-600 font-bold">To-Do List</button></li>
+        <li><button id="heatmapTab" class="text-gray-600">Heatmap</button></li>
+        <li><button id="trackerTab" class="text-gray-600">Activity Tracker</button></li>
+      </ul>
+    </nav>
+
+    <!-- To-Do List Section -->
+    <div id="todoSection" class="w-full max-w-2xl">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">To-Do List</h1>
+      <!-- Task Input -->
+      <div class="mb-4">
+        <input type="text" id="taskInput" placeholder="Add a new task" class="w-full p-2 rounded border border-gray-300">
+        <select id="taskCategory" class="mt-2 p-2 rounded border border-gray-300 w-full">
+          <option value="mandatory">Mandatory</option>
+          <option value="important">Important</option>
+          <option value="less-important">Less Important</option>
+        </select>
+        <button id="addTaskBtn" class="mt-2 p-2 bg-blue-600 text-white rounded w-full">Add Task</button>
+      </div>
+      <!-- Task List -->
+       <!-- Task List Section -->
+       <div id="taskList" class="space-y-2"></div>
+      <!-- <div id="taskList" class="space-y-2"></div> -->
+    </div>
+
+    <!-- Heatmap Section -->
+    <div id="heatmapSection" class="w-full max-w-2xl hidden">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">Activity Heatmap</h1>
+      <div id="heatmap" class="grid grid-cols-7 gap-1"></div>
+    </div>
+
+    <!-- Activity Tracker Section -->
+    <div id="trackerSection" class="w-full max-w-2xl hidden">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">Activity Tracker</h1>
+      <div id="activityTracker" class="text-gray-600"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

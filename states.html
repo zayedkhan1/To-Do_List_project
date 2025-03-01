@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Stats</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-800">
+  <div class="container mx-auto p-4">
+    <!-- Header -->
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-blue-600">Your Stats</h1>
+      <a href="index.html" class="text-blue-500 underline mt-2 inline-block">Back to To-Do List</a>
+    </header>
+
+    <!-- Heatmap Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold text-blue-600 mb-4">Activity Heatmap</h2>
+      <div id="heatmap" class="grid grid-cols-7 gap-1"></div>
+    </section>
+
+    <!-- Activity Tracker Section -->
+    <section>
+      <h2 class="text-2xl font-bold text-blue-600 mb-4">Activity Tracker</h2>
+      <div id="activityTracker" class="text-gray-600"></div>
+    </section>
+  </div>
+
+  <script src="stats.js"></script>
+</body>
+</html>
